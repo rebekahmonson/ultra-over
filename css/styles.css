@@ -22,7 +22,13 @@ animation: gradient 7s ease infinite;
     50%{background-position:84% 100%}
     100%{background-position:17% 0%}
 }
-
+body{
+	font-family: Helvetica,sans-serif;
+	color: #fff;
+	margin: 0 !important;
+	padding: 0 !important;
+	min-height: 100%;
+}
 #bkg{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
