@@ -1,12 +1,11 @@
 @charset "utf-8";
 html{
-background: linear-gradient(324deg, #fb03f2, #07b8fb, #45ff00, #d7ff00);
+background: linear-gradient(131deg, #9f01ce, #07b8fb, #d7ff00, #f200ff);
 background-size: 800% 800%;
 
 -webkit-animation: gradient 7s ease infinite;
 -moz-animation: gradient 7s ease infinite;
 animation: gradient 7s ease infinite;
-min-height: 100% !important;
 }
 @-webkit-keyframes gradient {
     0%{background-position:17% 0%}
