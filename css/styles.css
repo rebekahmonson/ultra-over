@@ -1,17 +1,27 @@
 @charset "utf-8";
 html{
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f835a4+0,e58ef4+23,1ac7c5+67,effc21+100 */
-	background: #f835a4; /* Old browsers */
-	background: -moz-linear-gradient(45deg, #f835a4 0%, #e58ef4 23%, #1ac7c5 67%, #effc21 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(45deg, #f835a4 0%,#e58ef4 23%,#1ac7c5 67%,#effc21 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(45deg, #f835a4 0%,#e58ef4 23%,#1ac7c5 67%,#effc21 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f835a4', endColorstr='#effc21',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	min-height: 100%;
-	padding: 0 !important;
+	background: linear-gradient(269deg, #ff14f6, #14bfff, #6bfd35, #f0fd35);
+	background-size: 800% 800%;
+
+	-webkit-animation: 30s ease infinite;
+	-moz-animation: 30s ease infinite;
+	animation: 30s ease infinite;
+
+	@-webkit-keyframes {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+	@-moz-keyframes {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+	@keyframes { 
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
 }
 body{
 	font-family: Helvetica,sans-serif;
