@@ -24,7 +24,7 @@ animation: gradient 7s ease infinite;
 }
 body{
 	font-family: Helvetica,sans-serif;
-	color: #fff;
+	color: #000;
 	margin: 0 !important;
 	padding: 0 !important;
 	min-height: 100%;
@@ -40,11 +40,11 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
 }
 h1 {
 	font-size: 3rem;
-	color:#FA07DA;
+	/*color:#FA07DA;*/
 }
 h2 {
 	font-size: 2rem;
-	color: #05FAF6;
+	/*color: #05FAF6;*/
 	margin-bottom: 2em;
 }
 h3 {
@@ -89,7 +89,7 @@ footer{
 	background-color: #18adaa; 
 }
 label{
-	color: #fff;
+	color: #000;
 }
 @media all and (min-width: 200px) {
 	.clock{
