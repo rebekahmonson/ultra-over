@@ -3,9 +3,9 @@ html{
 	background: linear-gradient(269deg, #ff14f6, #14bfff, #6bfd35, #f0fd35);
 	background-size: 800% 800%;
 
-	-webkit-animation: 30s ease infinite;
-	-moz-animation: 30s ease infinite;
-	animation: 30s ease infinite;
+	-webkit-animation: 20s ease infinite;
+	-moz-animation: 20s ease infinite;
+	animation: 20s ease infinite;
 
 	@-webkit-keyframes {
 	    0%{background-position:0% 50%}
