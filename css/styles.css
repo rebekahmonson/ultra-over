@@ -24,7 +24,7 @@ animation: gradient 7s ease infinite;
 }
 body{
 	font-family: Helvetica,sans-serif;
-	color: #000;
+	color: #333;
 	margin: 0 !important;
 	padding: 0 !important;
 	min-height: 100%;
@@ -55,7 +55,7 @@ p{
 	line-height: 150%;
 }
 .flip-clock-divider .flip-clock-label{
-	color: white;
+	color: #333;
 }
 .flip-clock-wrapper{
 	margin: 0 0 1rem 0;
@@ -89,7 +89,7 @@ footer{
 	background-color: #18adaa; 
 }
 label{
-	color: #000;
+	color: #333;
 }
 @media all and (min-width: 200px) {
 	.clock{
