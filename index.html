@@ -20,15 +20,11 @@
       <div id="content">
         <h1>Is Ultra Fucking Over Yet?</h1>
         <h2 class="notyet">Not fucking yet.</h2>
+        <h2 class="next">Yes, it is fucking over.</h2>
         <div class="clock"></div>
-        <h3 class="notyet">
-          until it's fucking over.
-        </h3>
-        <div class="next">
-          <h2>Yes, it is fucking over.</h2>
-          <h3>See you in 2019. </h3>
-        </div>
-        
+        <h3 class="notyet">until it's fucking over.</h3>
+        <h3 class="next">See you again in March 2019. </h3>
+
         <footer>
           <p>Made with &#9829; for Miami by <a href="https://twitter.com/rsm" target="_blank">@rsm.</a> </p>
           <strong>
@@ -53,37 +49,39 @@
       </div>
     </div>
     <script>
-      var clock;
-
+    
       $(document).ready(function() {
-
+        var clock;
+      
         // Grab the current date
         var currentDate = new Date();
 
         // Set date Ultra ends in UTC
-        var futureDate  = new Date("Mon March 26 2018 00:00:00 GMT-0500");
-        //var nextDate = new Date(Date.UTC(2017, 11, 1, 0, 0, 0));
+        var endDate  = new Date("March 26 2018 00:00:00 GMT-0400");
 
-        // Calculate the difference in seconds between the future and current date
-        //var testDiff = 5;
-        var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
-        //var nextDiff = nextDate.getTime() / 1000 - currentDate.getTime() / 1000;
+        // Calculate the difference in seconds between the end and current date
+        var diff = endDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
-
-        // Instantiate a countdown FlipClock
-        clock = $('.clock').FlipClock(diff, {
-          clockFace: 'DailyCounter',
-          countdown: true,
-          minimumDigits: 8,
-          callbacks: {
+        //if already over, hide notyet and show next
+        if (diff<=0){ 
+          $('.notyet').hide();
+          $('.next').show(); 
+        } else{
+          // If not over yet, instantiate a counter
+          var clock = new FlipClock($('.clock'), diff, {
+            clockFace: 'DailyCounter',
+            autoStart: true,
+            countdown: true,
+            callbacks: {
                 stop: function() {
                     $('.notyet').hide();
-                    $('.clock').hide();
-                    $('.next').show();
+                    $('.next').show(); 
                 }
-            }
-        });
+            },
+          });
+        };
       });
+
     </script>
   </body>
 </html>
